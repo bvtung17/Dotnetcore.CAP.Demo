@@ -13,8 +13,6 @@ builder.Services.AddCap(options =>
     options.UseMySql("server=localhost;Port=3306;user=root;password=password123;database=Demo;ConnectionTimeout=120;");
     options.UseRabbitMQ("localhost");
     options.UseDashboard();
-    options.FailedRetryInterval = 3; // retry sau bao nhiêu giây
-    options.FailedRetryCount = 2; // số lần retry (retry khi thằng sub bị excetion)
 });
 
 builder.Services.AddTransient<HelloService>();
