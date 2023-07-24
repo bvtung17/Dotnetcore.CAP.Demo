@@ -26,6 +26,7 @@ PM> Install-Package DotNetCore.CAP.RabbitMQ
 
 ### Configuration
 **Step 0: Setup RabbitMQ with Docker**
+
     1. Erlang : (https://erlang.org/download/otp_versions_tree.html)
     2. Docker : `docker run -it --rm --name rabbitmq -p 5672:5672 -p 15672:15672 rabbitmq:3.12-management`
 
